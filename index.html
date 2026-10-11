@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scavenger Hunt App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="player-info">
+        <label for="location">Your Location:</label>
+        <input type="text" id="location">
+        <label for="scavenger-type">Scavenger Type:</label>
+        <select id="scavenger-type">
+            <option value="creative">Creative</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="difficult">Difficult</option>
+        </select>
+        <label for="items-count">Items Needed:</label>
+        <input type="number" id="items-count" min="5">
+        <button id="start-hunt">Start Hunt</button>
+    </div>
+    <div id="participant-list"></div>
+    <div id="notifications"></div>
+    <div id="photo-input">
+        <h2>Take Photo of Item</h2>
+        <button id="take-photo-btn">Take Photo</button>
+        <input type="file" id="photo-input">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
